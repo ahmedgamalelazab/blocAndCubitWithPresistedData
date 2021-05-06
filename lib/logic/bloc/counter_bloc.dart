@@ -23,13 +23,11 @@ class CounterBloc extends HydratedBloc<CounterEvent, CounterState> {
 
   @override
   CounterState fromJson(Map<String, dynamic> json) {
-    // TODO: implement fromJson
     return CounterState.fromMap(json);
   }
 
   @override
   Map<String, dynamic> toJson(CounterState state) {
-    // TODO: implement toJson
-    state.toMap();
+    return state.toMap();
   }
 }
